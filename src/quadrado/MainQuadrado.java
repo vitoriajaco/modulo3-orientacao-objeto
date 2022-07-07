@@ -9,7 +9,9 @@ public class MainQuadrado {
         Scanner input = new Scanner(System.in);
         System.out.println("Qual o valor do lado? ");
         q.lado = input.nextDouble();
-
         System.out.println(q.lado);
+
+        q.area();
+
     }
 }

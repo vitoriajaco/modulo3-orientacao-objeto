@@ -1,3 +1,7 @@
+//Classe Quadrado: Crie uma classe que modele um quadrado:
+//Atributos: Tamanho do lado
+//Métodos: Mudar valor do Lado, Retornar valor do Lado e calcular Área;
+
 package quadrado;
 
 import java.util.Scanner;
@@ -18,5 +22,11 @@ public class Quadrado {
 
     public double retornarValorLado(){
         return lado;
+    }
+
+    public double area() {
+        System.out.println("O valor da área é de:" + lado * lado);
+
+        return 0;
     }
 }
