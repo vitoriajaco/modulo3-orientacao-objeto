@@ -27,6 +27,6 @@ public class Quadrado {
     public double area() {
         System.out.println("O valor da área é de:" + lado * lado);
 
-        return 0;
+        return lado;
     }
 }
