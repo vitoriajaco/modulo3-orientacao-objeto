@@ -14,7 +14,6 @@ public class Jardinagem {
     public double valorAdubo;
     public double receberAdubo;
 
-
     public Jardinagem(String nomeJardim, double qtdMetros, int qtdPlantas, double qtdMetrosGrama) {
         this.nomeJardim = nomeJardim;
         this.qtdMetros = qtdMetros;
@@ -26,8 +25,9 @@ public class Jardinagem {
         Scanner input = new Scanner(System.in);
         System.out.println("Digite a quantidade de metros da grama ");
         qtdMetrosGrama = input.nextDouble();
-        usaAdubo = qtdMetrosGrama * 0.100;
-        System.out.println("A quantidade de adubo usada será de " + usaAdubo);
+        usaAdubo = qtdMetrosGrama * 50;
+        kilosAdubo = usaAdubo/1000;
+        System.out.println("A quantidade de adubo usada será de " + usaAdubo + " e em quilos será de " + kilosAdubo);
 
     }
     public void  precoAdubo() {
@@ -37,4 +37,11 @@ public class Jardinagem {
         receberAdubo = valorAdubo * usaAdubo;
         System.out.println("Valor a cobrar do adubo R$ " + receberAdubo);
     }
+
+    public void precoCorteGrama() {
+        valorMetroGrama = 50;
+        valorConteGrama = qtdMetrosGrama * valorMetroGrama;
+        System.out.println("O valor de grama por metro é de R$" + valorConteGrama);
+    }
+
     }

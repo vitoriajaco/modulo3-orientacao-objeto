@@ -6,6 +6,7 @@ public class MainJardinagem {
 
         j.usarAdubo();
         j.precoAdubo();
+        j.precoCorteGrama();
 
 
     }
