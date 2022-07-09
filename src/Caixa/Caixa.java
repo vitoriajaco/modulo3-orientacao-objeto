@@ -22,16 +22,19 @@ public class Caixa {
         System.out.println("Quanto você deseja aplicar no crédito? ");
         Scanner input = new Scanner(System.in);
         valorAplicado = input.nextDouble();
-        this.credito = valorAplicado + credito + saldo;
-        System.out.printf("Você possui no crédito o valor de R$ %s%n", this.credito);
+        this.credito = valorAplicado;
+        saldo += credito;
+        System.out.printf("Você possui no crédito o valor de R$ %s%n", this.saldo);
+
     }
 
     public void debitoBanco() {
         System.out.println("Quanto você deseja pagar no débito? ");
         Scanner input2 = new Scanner(System.in);
         valorPagoDebito = input2.nextDouble();
-        this.debito = (this.credito) - (valorPagoDebito);
-        System.out.println("Você pagou a quantia de " + valorPagoDebito + " seu saldo final é de " + this.debito);
+        this.debito = (valorPagoDebito);
+        saldo -= debito;
+        System.out.println("Você pagou a quantia de " + valorPagoDebito + " seu saldo final é de " + saldo);
 
     }
 }

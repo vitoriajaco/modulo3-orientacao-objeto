@@ -39,9 +39,6 @@ public class MainCaixa {
 
         }
 
-       // contaVitoria.creditoBanco();
-        // contaVitoria.debitoBanco();
-
 
     }
 }
