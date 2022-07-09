@@ -18,7 +18,7 @@ public class Retangulo {
         this.ladoB = ladoB;
     }
 
-    public String mostrarLados(double ladoA, double ladoB){
+    public String mostrarLados(){
         System.out.println("Valor de ladoA" + ladoA);
         System.out.println("Valor de ladoA" + ladoB);
         return null;
